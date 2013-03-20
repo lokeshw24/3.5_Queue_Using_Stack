@@ -1,0 +1,15 @@
+PROG :
+	>Implement a queue using 2 stacks.
+
+LOGIC : 
+	>While we enqueue, we push in first stack.
+	When we dequeue, we transfer all items from stack1 to stack2.
+	NOW,henceforth, whenever we enqueue we push to stack1 and whenever we dequeue we pop from stack2
+	If stack2 becomes NULL, then again we transfer all elements from stack1 to stack2.
+
+	>I have implemented "double linked list" as stack.
+
+
+DOUBT :
+	>dequeue returns '0' if the stack is NULL,so we are not sure if stack2 is empty OR '0' is what 
+	it wants to return. Dont know how to get rid of it.
